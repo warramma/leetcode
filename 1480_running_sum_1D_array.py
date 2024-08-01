@@ -1,5 +1,6 @@
 #tags: prefix
 #date: 8-1-24
+#difficulty: easy
 #time complexity: O(n)
 #space complexity: O(1)
 
