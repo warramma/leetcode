@@ -21,3 +21,5 @@ def valid_anagram(s, t):
             t_dict[char] = 1
     
     return s_dict == t_dict
+
+#comment - dictonary works for anagram but not palindrome since order & specific amount matters!
