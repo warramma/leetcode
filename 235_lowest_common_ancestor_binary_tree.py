@@ -33,5 +33,30 @@ def lca(root, p, q):
 
 #time - o(h), space - O(h)
 
+###--------------------------Iterative solution-----------
 
-       
+def lca_iterative(root, p,q):
+    lca = TreeNode()
+    smaller, larger = None, None
+    if p.val < q.val:
+        smaller = p
+        larger = q
+    elif p.val > q.val:
+        smaller = q
+        larger = p
+    else:
+        smaller = p
+        larger = p
+    
+    current = root #tracker node
+    while current:
+        if current.val > larger.val:
+            current = current.left
+        elif current.val < smaller.val:
+            current = current.right
+        else:
+            #if not greater than the larger and not smaller than the smaller, then
+            #must be between the two (inclusive) therefore LCA
+            return current
+    
+    return None
