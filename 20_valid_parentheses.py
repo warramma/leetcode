@@ -65,8 +65,6 @@ def isvalid(s):
                 stack.pop()
             else:
                 stack.append(char)
-        print(stack)
-
     return len(stack) == 0
 
 print(isvalid("()[]{}"))
