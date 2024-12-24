@@ -42,7 +42,6 @@ def lca(root, p, q):
 ###--------------------------Iterative solution-----------
 
 def lca_iterative(root, p,q):
-    lca = TreeNode()
     smaller, larger = None, None
     if p.val < q.val:
         smaller = p
