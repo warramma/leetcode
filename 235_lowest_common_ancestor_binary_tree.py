@@ -33,6 +33,12 @@ def lca(root, p, q):
 
 #time - o(h), space - O(h)
 
+
+
+
+
+
+#for iterative - space - O(1)
 ###--------------------------Iterative solution-----------
 
 def lca_iterative(root, p,q):
